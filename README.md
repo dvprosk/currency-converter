@@ -40,3 +40,7 @@ package.json    Зависимости проекта
 Для просмотра веб-версии откройте `www/index.html` в браузере.
 
 Для подготовки Android-проекта установите Node.js и Android Studio, выполните `npm install`, затем `npx cap sync android`. После этого откройте папку `android` в Android Studio.
+
+## Android-приложение
+
+Скачать APK-файл можно в разделе [Releases](https://github.com/dvprosk/currency-converter/releases) на GitHub.
