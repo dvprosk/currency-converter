@@ -34,3 +34,9 @@ capacitor.config.json
                 Конфигурация Capacitor
 package.json    Зависимости проекта
 ```
+
+## Запуск
+
+Для просмотра веб-версии откройте `www/index.html` в браузере.
+
+Для подготовки Android-проекта установите Node.js и Android Studio, выполните `npm install`, затем `npx cap sync android`. После этого откройте папку `android` в Android Studio.

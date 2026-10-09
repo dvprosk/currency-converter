@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0"
+	>
+	<title>Конвертер валют</title>
+
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+<main class="wraper">
+
+	<div class="wallet">
+
+		<!-- Курсы валют -->
+		<section class="wallet__rates">
+
+			<h2>Курсы валют</h2>
+
+			<!-- RUB → UZS -->
+			<div class="wallet__rate">
+				<label for="rate-rub-uzs">
+					1 RUB =
+				</label>
+
+				<input
+					id="rate-rub-uzs"
+					type="number"
+					step="0.01"
+				>
+
+				<span>UZS</span>
+			</div>
+
+
+			<!-- USD → UZS -->
+			<div class="wallet__rate">
+				<label for="rate-usd-uzs">
+					1 USD =
+				</label>
+
+				<input
+					id="rate-usd-uzs"
+					type="number"
+					step="0.01"
+				>
+
+				<span>UZS</span>
+			</div>
+
+
+			<!-- USD → RUB -->
+			<div class="wallet__rate">
+				<label for="rate-usd-rub">
+					1 USD =
+				</label>
+
+				<input
+					id="rate-usd-rub"
+					type="number"
+					step="0.01"
+				>
+
+				<span>RUB</span>
+			</div>
+
+		</section>
+
+		<!-- Конвертер -->
+		<ul class="wallet__list">
+
+			<!-- UZS -->
+			<li class="wallet__item">
+				<label for="wallet__item-uzs">
+					Узбекский сум
+				</label>
+
+				<div class="wallet__input-wrapper">
+					<input
+						id="wallet__item-uzs"
+						name="wallet__item-uzs"
+						inputmode="decimal"
+						autocomplete="off"
+					>
+
+					<button
+						class="wallet__clear"
+						type="button"
+						aria-label="Очистить"
+					>
+						×
+					</button>
+				</div>
+			</li>
+
+
+			<!-- RUB -->
+			<li class="wallet__item">
+				<label for="wallet__item-rub">
+					Рубль
+				</label>
+
+				<div class="wallet__input-wrapper">
+					<input
+						id="wallet__item-rub"
+						name="wallet__item-rub"
+						inputmode="decimal"
+						autocomplete="off"
+					>
+
+					<button
+						class="wallet__clear"
+						type="button"
+						aria-label="Очистить"
+					>
+						×
+					</button>
+				</div>
+			</li>
+
+
+			<!-- USD -->
+			<li class="wallet__item">
+				<label for="wallet__item-usd">
+					Доллар
+				</label>
+
+				<div class="wallet__input-wrapper">
+					<input
+						id="wallet__item-usd"
+						name="wallet__item-usd"
+						inputmode="decimal"
+						autocomplete="off"
+					>
+
+					<button
+						class="wallet__clear"
+						type="button"
+						aria-label="Очистить"
+					>
+						×
+					</button>
+				</div>
+			</li>
+
+		</ul>
+
+
+	</div>
+
+</main>
+
+
+<script src="./script.js"></script>
+
+</body>
+
+</html>
+
